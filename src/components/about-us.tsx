@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
 import { Rocket, Star, Users, Award } from "lucide-react"
+import Image from "next/image"
 
 export default function AboutUs() {
   const ref = useRef(null)
@@ -98,7 +99,7 @@ export default function AboutUs() {
         >
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
+              <h3 className="text-2xl font-bold mb-4">Our Team</h3>
               <p className="text-foreground/80 mb-4">
                 To inspire and educate the next generation of space enthusiasts while developing innovative solutions
                 for space exploration challenges. We aim to bridge the gap between academic knowledge and practical
@@ -111,8 +112,14 @@ export default function AboutUs() {
               </p>
             </div>
             <div className="relative h-64 md:h-full min-h-[300px] rounded-lg overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/20 to-blue-500/20" />
-              <div className="absolute inset-0 bg-[url('/placeholder.svg?height=600&width=800')] bg-cover bg-center" />
+              <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/20 to-blue-500/20 z-10" />
+              <Image
+                src="/image3.jpg"
+                alt="Our Team"
+                fill
+                className="object-cover"
+                priority
+              />
             </div>
           </div>
         </motion.div>

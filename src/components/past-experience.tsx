@@ -4,6 +4,7 @@ import { useState, useRef } from "react"
 import { motion, AnimatePresence, useInView } from "framer-motion"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 const projects = [
   {
@@ -11,15 +12,15 @@ const projects = [
     title: "CanSat Competition 2022",
     description:
       "Designed and built a small satellite prototype that was launched to an altitude of 1km and successfully collected atmospheric data during descent.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/cansat-2022.jpg",
     achievements: "3rd Place National Ranking",
   },
   {
     id: 2,
-    title: "Lunar Rover Challenge",
-    description:
-      "Developed a remote-controlled rover capable of navigating lunar-like terrain and performing sample collection tasks with precision.",
-    image: "/placeholder.svg?height=600&width=800",
+    title: "WCRC",
+    description: 
+      "The World CanSat Rocketry Competition (WCRC) is an international challenge where students and professionals design, build, and launch miniaturized satellites called CanSats. These soda can-sized satellites are deployed from rockets at altitudes of 1 to 2 km to complete specific missions, such as data collection or controlled descent. ",
+    image: "/image2.jpg",
     achievements: "Best Innovation Award",
   },
   {
@@ -27,7 +28,7 @@ const projects = [
     title: "High-Altitude Balloon Project",
     description:
       "Launched a high-altitude balloon reaching 30km altitude, capturing stunning imagery and collecting valuable atmospheric data.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/placeholder.jpg",
     achievements: "Featured in National Science Magazine",
   },
   {
@@ -35,7 +36,7 @@ const projects = [
     title: "CubeSat Development",
     description:
       "Currently working on a 1U CubeSat design with an atmospheric monitoring payload, scheduled for launch in 2024.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/placeholder.jpg",
     achievements: "Selected for University Space Program",
   },
 ]
@@ -87,9 +88,10 @@ export default function PastExperience() {
               >
                 <div className="relative h-64 md:h-auto">
                   <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/20 to-blue-500/20 z-10" />
-                  <img
-                    src={projects[currentIndex].image || "/placeholder.svg"}
+                  <Image
+                    src={projects[currentIndex].image}
                     alt={projects[currentIndex].title}
+                    fill
                     className="w-full h-full object-cover"
                   />
                 </div>

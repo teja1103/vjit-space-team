@@ -5,6 +5,7 @@ import { motion } from "framer-motion"
 import { Moon, Sun, Menu, X } from "lucide-react"
 import { useTheme } from "next-themes"
 import { Button } from "./ui/button"
+import Image from "next/image"
 
 const navItems = [
   { name: "Home", href: "#home" },
@@ -45,16 +46,21 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <motion.div
+            <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
             className="flex items-center space-x-2"
-          >
-            <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-500">
-              VJIT Space Team
-            </span>
-          </motion.div>
+            >
+            <Image
+              src={theme === "dark" ? "/white_logo.png" : "/logo.png"}
+              alt="Logo"
+              width={195}
+              height={195}
+              className="rounded-full cursor-pointer"
+              onClick={() => scrollToSection("#home")}
+            />
+            </motion.div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">

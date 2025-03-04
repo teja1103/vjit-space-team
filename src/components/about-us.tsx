@@ -66,9 +66,7 @@ export default function AboutUs() {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">About Us</h2>
           <div className="w-20 h-1 bg-gradient-to-r from-purple-500 to-blue-500 mx-auto mb-8"></div>
           <p className="max-w-3xl mx-auto text-lg text-foreground/80">
-            The VJIT Space Team is a passionate group of students dedicated to space exploration and innovation. Founded
-            in 2018, our team brings together engineering, science, and design students to work on cutting-edge space
-            projects and research.
+          The **VJIT Space Team** is a passionate group of students committed to space exploration and technological innovation. Founded in 2022, the team unites engineering students from diverse disciplines to collaborate on innovative projects that push the boundaries of science and technology.
           </p>
         </motion.div>
 

@@ -61,14 +61,14 @@ export default function ContactForm() {
     {
       icon: <Mail className="h-5 w-5 text-primary" />,
       title: "Email",
-      details: "spaceteam@vjit.edu",
-      link: "mailto:spaceteam@vjit.edu",
+      details: "ecehod@vjit.ac.in",
+      link: "mailto:ecehod@vjit.ac.in",
     },
     {
       icon: <Phone className="h-5 w-5 text-primary" />,
       title: "Phone",
-      details: "+91 9876543210",
-      link: "tel:+919876543210",
+      details: "+91 7780448692",
+      link: "tel:+917780448692",
     },
     {
       icon: <MapPin className="h-5 w-5 text-primary" />,
@@ -116,7 +116,7 @@ export default function ContactForm() {
                 </div>
               </a>
             ))}
-
+{/* 
             <div className="p-4 bg-card rounded-lg border border-border mt-6">
               <h3 className="font-medium text-foreground mb-2">Follow Us</h3>
               <div className="flex space-x-4">
@@ -185,7 +185,7 @@ export default function ContactForm() {
                   </svg>
                 </a>
               </div>
-            </div>
+            </div> */}
           </motion.div>
 
           <motion.div

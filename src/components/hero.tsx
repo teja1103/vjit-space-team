@@ -25,7 +25,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-500"
+            className="text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-500 pb-2"
           >
             Exploring the Cosmos
           </motion.h1>
@@ -33,7 +33,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-xl md:text-2xl mb-8 text-foreground/80"
+            className="text-xl md:text-2xl mb-8 text-foreground/80 pb-2"
           >
             VJIT Space Team is dedicated to pushing the boundaries of space exploration and innovation through
             student-led research and projects.

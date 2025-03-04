@@ -13,7 +13,7 @@ const projects = [
     description:
       "Designed and built a small satellite prototype that was launched to an altitude of 1km and successfully collected atmospheric data during descent.",
     image: "/cansat-2022.jpg",
-    achievements: "3rd Place National Ranking",
+    achievements: "Best Design Award ⭐",
   },
   {
     id: 2,
@@ -25,19 +25,11 @@ const projects = [
   },
   {
     id: 3,
-    title: "High-Altitude Balloon Project",
+    title: "SMOPS 2022",
     description:
-      "Launched a high-altitude balloon reaching 30km altitude, capturing stunning imagery and collecting valuable atmospheric data.",
-    image: "/placeholder.jpg",
-    achievements: "Featured in National Science Magazine",
-  },
-  {
-    id: 4,
-    title: "CubeSat Development",
-    description:
-      "Currently working on a 1U CubeSat design with an atmospheric monitoring payload, scheduled for launch in 2024.",
-    image: "/placeholder.jpg",
-    achievements: "Selected for University Space Program",
+      "Attended a prestigious space conference in Bengaluru, engaging with ISRO scientists and leading researchers from around the world to discuss advancements in space technology.",
+    image: "/image4.jpg",
+    achievements: "",
   },
 ]
 
@@ -86,13 +78,13 @@ export default function PastExperience() {
                 transition={{ duration: 0.5 }}
                 className="grid md:grid-cols-2 bg-card border border-border rounded-xl overflow-hidden"
               >
-                <div className="relative h-64 md:h-auto">
+                <div className="relative h-64 md:h-96">
                   <div className="absolute inset-0 bg-gradient-to-tr from-purple-500/20 to-blue-500/20 z-10" />
                   <Image
                     src={projects[currentIndex].image}
                     alt={projects[currentIndex].title}
                     fill
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-center"
                   />
                 </div>
                 <div className="p-6 md:p-8 flex flex-col justify-center">
@@ -157,11 +149,11 @@ export default function PastExperience() {
           <h3 className="text-2xl font-bold mb-4">Our Achievements</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             <div className="bg-card border border-border rounded-lg p-6 shadow-md">
-              <div className="text-4xl font-bold text-purple-500 mb-2">12+</div>
+              <div className="text-4xl font-bold text-purple-500 mb-2">10+</div>
               <div className="text-foreground/80">Projects Completed</div>
             </div>
             <div className="bg-card border border-border rounded-lg p-6 shadow-md">
-              <div className="text-4xl font-bold text-blue-500 mb-2">8</div>
+              <div className="text-4xl font-bold text-blue-500 mb-2">2</div>
               <div className="text-foreground/80">Awards Won</div>
             </div>
             <div className="bg-card border border-border rounded-lg p-6 shadow-md">
